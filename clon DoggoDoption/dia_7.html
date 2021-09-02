@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopt a Dog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- Para iconos de redes -->
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+
+    <!-- Para tooltip (globo notificacion) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" href="dia_7.css">
+</head>
+
+<body>
+    <header>
+        <nav class="ContenedorEncabezado">
+            <ul class="barraMenu">
+                <div class="logo">
+                    <img src="logo dog extendido.jpg">
+                </div>
+                <div class="menu">
+                    <li id="browse" class="nav-link active" aria-current="page" href="#">BROWSE</li>
+                    <li id="resource" class="nav-link active" aria-current="page" href="#">RESOURCES</li>
+                    <li id="volunterr" class="nav-link active" aria-current="page" href="#">VOLUNTERR</li>
+                </div>
+                <div class="sesion">
+                    <div id="registrar" class="breadcrumb-item">
+                        <a href="https://getbootstrap.com/docs/5.1/components/buttons/">Login</a>
+                    </div>
+                    <button type="button" class="btn btn-primary me-3 ripple-surface">Sing UP</button>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenedorPrincipal">
+        <section class="NombrePerro">
+            <p class="text-left fs-1 fw-bolder ">Rylai</p>
+            <button type="button" class="btn btn-primary me-3 ripple-surface">Ask About Rylai</button>
+        </section>
+
+        <section class="GaleriaImagenes">
+            <div class="row">
+                <div class="col-12" href="#image2">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/malamute1.jpg"
+                        alt="Gallery image 1" />
+                </div>
+                <a class="col-3" href="#image1">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/malamute1.jpg" alt="Image 1"
+                        height="60px" />
+                </a>
+                <a class="col-3" href="#image2">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/malamute2.jpg" alt="Image 2"
+                        height="60px" />
+                </a>
+                <a class="col-3" href="#image3">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/malamute3.jpg" alt="Image 3"
+                        height="60px" />
+                </a>
+                <a class="col-3" href="#image4">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/malamute4.jpg" alt="Image 4"
+                        height="60px" />
+                </a>
+            </div>
+        </section>
+
+        <section class="infoGaleriaDerecha">
+            <div class="bloque1">
+                <p>Bredd</p>
+                <p>Alaskan Malamute</p>
+            </div>
+            <div class="bloque2">
+                <p>TYPE</p>
+                <p>Senior</p>
+            </div>
+            <div class="bloque3">
+                <p>SEX</p>
+                <p>Female</p>
+            </div>
+            <div class="bloque4">
+                <p>SIZE</p>
+                <p>Large</p>
+            </div>
+            <div class="bloque5">
+                <p>COLOR</p>
+                <p>Brown & White</p>
+            </div>
+            <div class="bloque6">
+                <p>COAT LENGTH</p>
+                <p>Medium</p>
+            </div>
+            <div class="bloque7">
+                <p>More about Rylai</p>
+                <p>
+                    <strong>Characteristics: </strong>
+                    Gentle, playful.
+                </p>
+                <p>
+                    <strong>Health: </strong>
+                    Vaccinations up to date. Neutered.
+                </p>
+                <p>
+                    <strong>Good with: </strong>
+                    Other pets and children.
+                </p>
+                <p>
+                    <strong>Exercise Needs: </strong>
+                    High — requires daily walks.
+                </p>
+                <p>
+                    <strong>Other Important Details:</strong>
+                    Requires medication for back pain.
+                </p>
+                <p>
+                    Meet Rylai, a large dog with a heart of gold. Extremely good with people of all ages and even other
+                    pets (friends with all the cats in the shelter). She is very active and loves walks/hikes. Rylai
+                    sheds a lot so we hope you have a good vacuum cleaner.
+                </p>
+                <section class="bloqueUbicacion" data-toggle="tooltip" title="Get directions whith Google Mpas">
+                    <div class="texto" data-tooltip="Get directions with Google Maps">
+                        <p> Rylai is located in Rudolf Shelter.</p>
+                        <p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z">
+                                </path>
+                            </svg>
+                            5km from your current location
+                        </p>
+                    </div>
+                    <a class="imagen">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/icon-googlemap.png"
+                            alt="Icono google">
+                    </a>
+                </section>
+            </div>
+
+        </section>
+
+        <section class="Galeria2">
+
+            <p>Other Dogs You May Fall in Love With</p>
+
+            <div class="Imagenes">
+                <div class="Imagen1">
+                    <div class="Imagen_Doggo">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/dog.png" alt="imagen 1">
+                    </div>
+                    <div class="Titulo">
+                        <h3>Doggo Dog</h3>
+                    </div>
+                    <div class="boton">
+                        <a>Adopt Doogo!</a>
+                    </div>
+                </div>
+                <div class="Imagen1">
+                    <div class="Imagen_Doggo">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/dog.png" alt="imagen 1">
+                    </div>
+                    <div class="Titulo">
+                        <h3>Doggo Dog</h3>
+                    </div>
+                    <div class="boton">
+                        <a>Adopt Doogo!</a>
+                    </div>
+                </div>
+                <div class="Imagen1">
+                    <div class="Imagen_Doggo">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/dog.png" alt="imagen 1">
+                    </div>
+                    <div class="Titulo">
+                        <h3>Doggo Dog</h3>
+                    </div>
+                    <div class="boton">
+                        <a>Adopt Doogo!</a>
+                    </div>
+                </div>
+                <div class="Imagen1">
+                    <div class="Imagen_Doggo">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/dog.png" alt="imagen 1">
+                    </div>
+                    <div class="Titulo">
+                        <h3>Doggo Dog</h3>
+                    </div>
+                    <div class="boton">
+                        <a>Adopt Doogo!</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+        <section class="bloqueBoton">
+            <button type="button" class="btn btn-primary me-3 ripple-surface">Ask About Rylai</button>
+        </section>
+    </main>
+
+    <footer class="ContenedorPie">
+        <div class="footer">
+            <div class="iconoDog">
+                <img src="logo dog.jpg" alt="Logo dog">
+            </div>
+            <ul class="seccion_AcercaDe">
+                <li>
+                    <p>About Us</p>
+                </li>
+                <li> <a href="#">Our Values</a></li>
+                <li><a href="#">Media Kit</a></li>
+                <li><a href="#">Volunteer with Us!</a></li>
+            </ul>
+            <ul class="seccion_Adopta">
+                <li>
+                    <p>Adopt, Don't Shop!</p>
+                </li>
+                <li><a href="#">Browse Dogs</a></li>
+                <li><a href="#">Resources</a></li>
+            </ul>
+            <div class="seccion_Subscripcion">
+                <div class="suscripcion_Contenedor">
+                    <div class="texto_Suscripcion">
+                        <h3>Subscribe to our newsletter!</h3>
+                        <p>Get the latest news on doggodoption. We are pawsitive we will not spam you.</p>
+                    </div>
+                    <div class="search_Suscripcion">
+                        <input class="search" type="text" placeholder="Your Email Here" />
+                    </div>
+                    <div class="boton_Suscripcion">
+                        <button class="boton_Suscribir">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <ul class="seccion_RedesSociales">
+                <li>
+                    <p>Follow Us:</p>
+                </li>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+            <div class="seccion_Politicas">
+                <a>Copyright &copy; 2019</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+
+</body>
+
+</html>

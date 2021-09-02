@@ -1,0 +1,533 @@
+header{
+    position: sticky;
+    top: 0%;
+    z-index: 100;
+}
+
+
+
+
+
+/*HEADER*/
+.ContenedorEncabezado{
+    margin: 0;
+    grid-template-areas: 
+    "barraMenu menu sesion";
+}
+
+.barraMenu{
+    grid-area: barraMenu;
+    margin-inline-end: 0px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    top: 0;
+    box-shadow: 0 2px 8px -2px #33333359;
+    border-radius: 10px 10px 0 0;
+    align-content: center;
+    align-items: center;
+    font-size: 17px;
+    font-family: system-ui;
+    background-color: white;
+}
+
+.menu{
+    grid-area: menu;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    font-size: 20px;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+#browse{
+    border-bottom: 5px solid cornflowerblue;
+}   
+
+.sesion{
+    grid-area: sesion;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    padding-right: 30px;
+}
+
+#registrar{
+    margin-top: 5px;
+    margin-right: 15px;
+}
+
+.sesion button{
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    background-color: #4692e0eb;
+}
+
+
+
+
+
+
+
+
+/*MAIN*/
+.contenedorPrincipal{
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  align-items: flex-start;
+  grid-gap: 30px;
+  grid-template-areas: 
+    "NombrePerro NombrePerro"
+    "GaleriaImagenes infoGaleriaDerecha"
+    "bloqueBoton infoGaleriaDerecha"
+    "Galeria2 Galeria2";
+}
+
+.NombrePerro{
+    display: grid;
+    grid-template-columns: auto max-content;
+    align-items: center;
+    grid-area: NombrePerro;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.NombrePerro button{
+    width: 100%;
+    height: auto;
+    font-size: 25px;
+    background-color: #4692e0eb;
+}
+
+.GaleriaImagenes{
+    grid-area: GaleriaImagenes;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    width: 95%;
+    margin: auto;
+    grid-gap: 10px;
+}
+
+.GaleriaImagenes img{
+    width: 100%;
+    vertical-align: super;
+    object-fit: cover;   
+    transition: transform 0.5s;
+    overflow: hidden;
+    box-shadow: 0 0 6px rgb(0, 0, 0, .5);
+    border-radius: 10px;
+}
+
+.GaleriaImagenes div.div.GaleriaImagenes{
+    width: 200px;
+    height: 300px;
+}
+
+.GaleriaImagenes a:hover{
+    filter: blur(2px);
+    transform: rotate(10deg) scale(1.3);
+}
+
+.infoGaleriaDerecha{
+    grid-area: infoGaleriaDerecha;
+    margin-right: 30px;
+    display: grid;
+    grid-template-columns: inherit;
+    grid-gap: 10px;
+}
+
+.bloque7{
+    grid-column: 1/span 2;
+    margin: 10px 0;
+    font-size: 22px;
+}
+
+
+.bloque7 p:first-child{
+    border-bottom: inset;
+    font-size: 42px;
+    font-family: fantasy;
+}
+
+.bloqueBoton{
+    grid-area: bloqueBoton;
+    display: contents;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 0 10px;
+}
+.bloqueBoton button{
+    width: 100%;
+    height: auto;
+    font-size: 25px;
+    background-color: #4692e0eb;
+}
+
+.bloqueUbicacion{
+    margin: 20px;
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    text-align: left;
+    background: #ede7f6;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 22px;
+}
+.bloqueUbicacion img{
+    width: 60px;
+    height: 60px;
+    margin: 0 25px;
+}
+.texto p:first-child{
+    font-size: 25px;
+    color: rgb(40, 70, 170);
+     padding: 10px 0px 0px 15px;
+     margin-bottom: 5px;
+ }
+ .texto p:nth-child(2){
+     padding: 0px 0px 0px 15px;
+ }
+
+ .Galeria2{
+    padding: 30px;
+    margin: 30px 0;
+    grid-area: Galeria2;
+ }
+
+ .Imagenes{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+ }
+
+ .Imagen1{
+    border-radius: 10px;
+    overflow: hidden;
+    min-width: 250px;
+    width: 100%;
+    grid: 400px 0px/100%;
+
+    position: relative;
+    background: #fff;
+    color: #111;
+    box-shadow: 0 3px 15px rgb(51 51 51 / 20%);
+    transition: 0.2s ease;
+    display: grid;
+
+ }
+
+ .Imagen1 .Imagen_Doggo{
+    position: relative;
+ }
+ 
+ .Imagen1 .Imagen_Doggo, .Imagen1 .Titulo{
+    grid-row: 1/2;
+    grid-column: 1/2;
+ }
+
+ .Imagen1 .Imagen_Doggo::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0));
+ }
+
+ .Imagen1 .Titulo{
+    z-index: 5;
+    grid-row: 1/2;
+    align-self: end;
+    margin: 0 0 15px;
+    color: #fff;
+    text-shadow: 0 1px 4px rgb(0 0 0 / 20%);
+    padding: 20px 25px 0;
+ }
+
+ .Imagen1 .boton{
+    padding: 0;
+ }
+
+ .Imagenes img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ }
+
+ .Imagen1 .boton a{
+    outline: none;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    border: none;
+    font: 500 16px/1 "Poppins", sans-serif;
+    padding: 20px;
+    cursor: pointer;
+    background: #03a9f4;
+    color: #fff;
+    position: relative;
+    top: 0;
+    transition: 0.2s ease;
+ }
+ .Imagen1 .Imagen_Doggo:hover{
+    top: -80px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+ 
+ .Imagen1 .Imagen_Doggo:hover + .Titulo{
+    transform: translate(0, -80px);
+ }
+
+ .Imagen1 .boton:hover{
+    top: -80px;
+ }
+ .Galeria2 p{
+    font: 700 32px/1.2 "Poppins", sans-serif;
+    margin: 0 0 40px;
+ }
+
+
+
+
+
+
+
+
+/*FOOTER*/
+.footer {
+    grid-template-columns: repeat(2, 1fr) 50%;
+    padding: 30px 30px 0;
+    grid-template-areas: 
+    "iconoDog iconoDog iconoDog" 
+    "seccion_AcercaDe seccion_Adopta seccion_Suscripcion" 
+    "seccion_RedesSociales seccion_RedesSociales seccion_Suscripcion" 
+    "seccion_Politicas seccion_Politicas seccion_Politicas";
+  }
+  
+  .iconoDog {
+    grid-area: iconoDog;
+    text-align: center;
+    margin-bottom: 2em;
+    position: relative;
+  }
+  .iconoDog:before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    top: 40%;
+    border-top: 0.5px solid #ccc;
+  }
+  .iconoDog img{
+    display: inline-block;
+    position: relative;
+    background: #fff;
+    padding: 0 15px;
+  }
+  
+  .seccion_AcercaDe {
+    grid-area: seccion_AcercaDe;
+    margin: 2em 0; 
+    list-style-type: none;
+ }
+  .seccion_AcercaDe li a {
+    padding: 5px 0;
+    display: block;
+    color: #999;
+    border-bottom: none;
+    text-decoration: none;
+  }
+  .seccion_AcercaDe li a:hover {
+    color: rgb(71, 179, 252);
+    border-bottom: none;
+  }
+  .seccion_AcercaDe p {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  
+  .seccion_Adopta {
+    grid-area: seccion_Adopta;
+    margin: 2em 0;  
+    list-style-type: none;
+}
+ .seccion_Adopta li a {
+   padding: 5px 0;
+   display: block;
+   color: #999;
+   border-bottom: none;
+   text-decoration: none;
+ }
+ .seccion_Adopta li a:hover {
+   color:  rgb(71, 179, 252);
+   border-bottom: none;
+ }
+ .seccion_Adopta p {
+   font-weight: 600;
+   font-size: 18px;
+   margin-bottom: 10px;
+ }
+  
+  .seccion_Suscripcion {
+    grid-area: seccion_Suscripcion;
+    margin: 2em 0;  
+    list-style-type: none;
+}
+.suscripcion_Contenedor{
+    display: grid;
+    grid-gap: 10px;
+    padding: 30px;
+    background: #e1f5fe;
+    border-radius: 10px;
+}
+.texto_Suscripcion {
+    grid-column: span 2;
+}
+.texto_Suscripcion h3{
+    color: #0277bd;
+    font: 700 24px/1.2 "Poppins", sans-serif;
+    margin-bottom: 10px;
+}
+.search {
+    height: 56px;
+    font-size: 18px;
+    padding: 15px;
+    width: 100%;
+}
+.boton_Suscribir{
+    outline: none;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    border: none;
+    font: 500 16px/1 "Poppins", sans-serif;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 6px;
+    background: #03a9f4;
+    color: #fff;
+    position: relative;
+    top: 0;
+    transition: 0.2s ease;
+    background-color: #673ab7;
+}
+.boton_Suscribir:hover{
+    color: #fff;
+    top: -3px;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 15%);
+}
+ .seccion_Suscripcion li a {
+   padding: 5px 0;
+   display: block;
+   color: #999;
+   border-bottom: none;
+ }
+ .seccion_Suscripcion li a:hover {
+   color:  rgb(71, 179, 252);
+   border-bottom: none;
+ }
+ .seccion_Suscripcion p {
+   font-weight: 600;
+   font-size: 18px;
+   margin-bottom: 10px;
+ }
+  
+  .seccion_RedesSociales {
+    grid-area: seccion_RedesSociales;
+  }
+  .seccion_RedesSociales p {
+    margin: 0 5px 0 0;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .seccion_RedesSociales li {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .seccion_RedesSociales li a {
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.05);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 3px;
+    color: #999;
+    text-align: center;
+    transition: 0.1s ease;
+    display: block;
+    padding: 5px 0;
+  }
+  .seccion_RedesSociales li a:hover {
+    color: #fff;
+    background: #673ab7;
+  }
+  
+  .seccion_Politicas {
+    grid-area: seccion_Politicas;
+    padding: 25px;
+    text-align: center;
+    margin-top: 50px;
+    border-top: 0.5px solid #ddd;
+    color: #808488;
+  }
+  .seccion_Politicas p {
+    margin-right: 20px;
+  }
+  .seccion_Politicas a {
+    margin: 0 10px;
+    color: var(--neutralShade5);
+  }
+  .seccion_Politicas a:hover {
+    color: #0277bd;
+  }
+  
+  @media (min-width: 992px) {
+    .footer {
+      display: grid;
+    }
+
+    .contenedorPrincipal{
+        display: grid;
+    }
+  
+    .seccion_Suscripcion, .seccion_Adopta, .seccion_RedesSociales, .seccion_AcercaDe {
+      margin: 0;
+    }
+  
+    .seccion_RedesSociales {
+      margin-top: 2em;
+    }
+  }
+  @media (max-width: 992px) {
+    
+    .contenedorPrincipal{
+        display: grid;
+        grid-template-areas: 
+    "NombrePerro NombrePerro"
+    "GaleriaImagenes GaleriaImagenes" 
+    "infoGaleriaDerecha infoGaleriaDerecha"
+    "bloqueBoton bloqueBoton"
+    "Galeria2 Galeria2";
+    margin: 0 30px;
+    }
+    .ContenedorEncabezado .barraMenu, .sesion{
+        display: grid;
+        grid-template-areas: 
+    "barraMenu sesion"
+    "menu menu " ;
+    }
+
+  }
+ 
